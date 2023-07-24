@@ -1,0 +1,60 @@
+GITHUB SETUP:
+
+SSH Keygen Command
+
+ssh-keygen -t ed25519 -C "GITHUB EMAIL YOURS"
+Press 3 times enter then
+
+cd 
+cd .ssh
+cat id_ed25519.pub
+Copy the public key and paste in 
+GitHub ==> Settings ==> SSH and GPG Keys ==> Add New SSH Key
+Add title as your name or today date
+and paste the key below
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GITHUB METHODS FOR MAKING AND PUSHING REPOSITORIES:
+  
+Method 1 (Diret from github):
+
+ 1. Go to github.com..Click on your repos and make a new repository
+1.1 give a name
+1.2 select public or private
+1.3 check on add readMe and click create new repo
+
+ 2. copy the ssh code
+ 3. go to your terminal
+     git clone sshcode -> to clone your terminal with repository 
+ 4. cd reponame -> to go inside the repo and to create files or folders
+ 5. mkdir foldername -> to create a directory/folder
+ 6. touch filename  -> to create a new file 
+ 7. nano filename  -> to write a content in file
+ 8. ctrl +O  -> to save the file content, ctrl + x  -> to exit the file
+ 9. cat filename -> to see the content of file in terminal
+ 10. To push file in cloud
+            i.   git add .
+            ii.  git commit -m "description of what you're adding"
+            iii. git push origin master/main -> the file will be pushed to your cloud 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Method 2 (When you have already code):
+
+1. Make sure u have a folder and  files in your code 
+2. Empty Folder will not upload  github
+3. Go to github.com create a new repo with same name of folder (Do not check README.md)  
+4. cd folderName
+5. ls -a -> to check hidden files and if there is no  .git folder
+6. git init ->it will create .git folder 
+7. one repo will have only 1 .git hidden folder so initialize only 1 time
+8. git remote add origin ssh-url
+Example: git remote add origin git@github.com:suhailroushan13/test2.git
+9. git remote -v
+10.git add .
+11. git commit -m "msg"
+12. git branch to check branch name 
+13 git push origin branch name
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
